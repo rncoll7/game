@@ -9,8 +9,8 @@ export class Player {
     this.aceleration = 1;
     this.maxSpeed = 5;
     this.size = 1;
-    this.x_pos = 0;
-    this.y_pos = 0;
+    this.x_pos = 100;
+    this.y_pos = 100;
     this.x_velocity = 0;
     this.y_velocity = 0;
     this.dead = false;
