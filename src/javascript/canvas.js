@@ -1,4 +1,4 @@
-import {gameLoop} from "./game";
+import {gameLoop, keydown, keyup} from "./game";
 
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
@@ -10,6 +10,10 @@ addEventListener('resize', () => {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
 })
+
+
+addEventListener('keydown', keydown)
+addEventListener('keyup', keyup)
 
 const animate = () => {
   requestAnimationFrame(animate);
